@@ -208,12 +208,12 @@ export const practice = [
 ] as const;
 
 export const record = {
-  lead: "Formal credentials started in the Navy and extended from 2001 to 2003 with a Master of Arts in Computer Resources and Information Management from Webster University. They continued through personal projects and a company project in 2006–2008, adopted in 2012. Updated formal credentials run from January through July 2024: front end, generative AI, AWS, then enterprise architecture. The developer on this page was built by shipping the companies above, on top of a Navy career that was already about high-stakes procedure.",
+  lead: "Formal credentials started in the Navy and extended from 2001 to 2003 with a Master of Arts in Computer Resources and Information Management from Webster University. I left the Navy in December 2002, joined CSX Transportation in January 2003 as a dispatcher, and was chief train dispatcher from 2006 until 2018. Starting in 2006 I built an operations system for crew, dispatch, power, train, reporting, and documentation, and CSX adopted it in 2010–2012. I started eMCycles in 2014 and left the railroad in 2018 to build it. COVID in 2020 turned me toward the software companies on this page. eMCycles is on hold until a prototype can be paid for from KTE or EcoSip, which I own outright. Updated formal credentials run from January through July 2024: front end, generative AI, AWS, then enterprise architecture. The developer on this page was built by shipping the companies above, on top of a Navy career that was already about high-stakes procedure.",
   chapters: [
     {
       when: "United States Navy",
       title: "Air traffic controller",
-      body: "Former Navy AC. The work was real-time judgment, a shared picture, and a record that other people act on. That habit is still the engineering standard: say what is live, say what is waiting, and do not invent a fill.",
+      body: "Former Navy AC. I left the Navy in December 2002. The work was real-time judgment, a shared picture, and a record that other people act on. That habit is still the engineering standard: say what is live, say what is waiting, and do not invent a fill.",
     },
     {
       when: "2001–2003",
@@ -221,9 +221,19 @@ export const record = {
       body: "Webster University, School of Business and Technology, Saint Louis. Master of Arts in Computer Resources and Information Management, conferred 17 May 2003.",
     },
     {
-      when: "2006–2008",
-      title: "Adopted in 2012",
-      body: "Personal projects and a company project, built from 2006 to 2008 and adopted in 2012.",
+      when: "January 2003–2018",
+      title: "CSX Transportation",
+      body: "Joined CSX Transportation in January 2003 as a dispatcher, and was chief train dispatcher from 2006 until 2018.",
+    },
+    {
+      when: "2006–2012",
+      title: "Operations system",
+      body: "Personal projects, and an operations system for crew, dispatch, power, train, reporting, and documentation, started in 2006. CSX adopted it in 2010–2012.",
+    },
+    {
+      when: "2014 → now",
+      title: "eMCycles",
+      body: "I started eMCycles in 2014 and left the railroad in 2018 to build it. COVID in 2020 turned me toward the software companies on this page. eMCycles is on hold until a prototype can be paid for from KTE or EcoSip, which I own outright.",
     },
     {
       when: "January–February 2024",
@@ -248,7 +258,7 @@ export const record = {
     {
       when: "2023 → now",
       title: "Companies, in order of the work",
-      body: "REIT DAO, tokenizing real estate. eMCycles, an electric motorcycle company, including a manufacturing-facility proposal for Miramar. Then the three builds on this page: EcoSip, KTE, and DeFi AI Technologies, where the current architecture work lives.",
+      body: "REIT DAO, tokenizing real estate. eMCycles, an electric motorcycle company, including a manufacturing-facility proposal for Miramar, on hold until a prototype can be paid for from KTE or EcoSip, which I own outright. Then the three builds on this page: EcoSip, KTE, and DeFi AI Technologies, where the current architecture work lives.",
     },
   ],
 } as const;
