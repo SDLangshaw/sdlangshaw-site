@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sean Langshaw
 
-## Getting Started
+Personal site for Sean D. Langshaw, founder and developer. It presents DeFi AI Technologies, KTE, and EcoSip, then the unfinished private side projects, then the short record of how the practice was built.
 
-First, run the development server:
+The site is a Next.js App Router application. Copy lives in `src/content/profile.ts`. There is no database. The page is static content, so a Vercel deploy does not need Postgres, Neon, or secrets.
+
+## Scripts
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
+pnpm build
+pnpm lint
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deploy
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Connect this repository to Vercel, or from the project root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+vercel
+```
 
-## Learn More
+Set `NEXT_PUBLIC_SITE_URL` to the production origin, without a trailing slash, once the domain is attached. Until then the canonical URL falls back to `https://sdlangshaw.com`.
 
-To learn more about Next.js, take a look at the following resources:
+## Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Node.js, TypeScript, Next.js 16, React 19, Tailwind CSS 4, pnpm. PostgreSQL is the database behind KTE and EcoSip. This portfolio does not query one.

@@ -1,26 +1,79 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ink: #10110e;
+  --panel: #171910;
+  --paper: #ebe6dc;
+  --muted: #b1aa9e;
+  --brass: #e4c78f;
+  --brass-dim: #a88b5c;
+  --live: #c5d4b4;
+  --hold: #e3b08a;
+  --line: rgba(235, 230, 220, 0.16);
+  color-scheme: dark;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), ui-serif, georgia, serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --color-ink: #10110e;
+  --color-panel: #171910;
+  --color-paper: #ebe6dc;
+  --color-muted: #b1aa9e;
+  --color-brass: #e4c78f;
+  --color-brass-dim: #a88b5c;
+  --color-live: #c5d4b4;
+  --color-hold: #e3b08a;
+  --color-line: rgba(235, 230, 220, 0.16);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--ink);
+  background-image:
+    radial-gradient(ellipse 70% 40% at 0% -10%, rgba(228, 199, 143, 0.09), transparent 55%),
+    linear-gradient(#14160f, #10110e 32rem);
+}
+
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background-image:
+    linear-gradient(rgba(235, 230, 220, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(235, 230, 220, 0.035) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(ellipse at 50% 0%, black, transparent 78%);
+}
+
+::selection {
+  background: #4a3d28;
+  color: var(--paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brass);
+  outline-offset: 3px;
+}
+
+section[id] {
+  scroll-margin-top: 6.5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media print {
+  body::before {
+    display: none;
+  }
+
+  header {
+    position: static;
+  }
 }
