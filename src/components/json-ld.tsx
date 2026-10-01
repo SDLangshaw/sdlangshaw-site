@@ -19,6 +19,11 @@ export function JsonLd() {
           name: "Miami-Fort Lauderdale Area",
         },
         sameAs: socials.map((item) => item.href),
+        alumniOf: {
+          "@type": "CollegeOrUniversity",
+          name: "Webster University",
+          address: "Saint Louis, Missouri",
+        },
         knowsAbout: [
           "Treasury operations",
           "Stablecoin settlement",
@@ -28,6 +33,16 @@ export function JsonLd() {
           "Next.js",
         ],
         hasCredential: [
+          {
+            "@type": "EducationalOccupationalCredential",
+            name: "Master of Arts, Computer Resources and Information Management",
+            credentialCategory: "degree",
+            recognizedBy: {
+              "@type": "CollegeOrUniversity",
+              name: "Webster University",
+            },
+            dateCreated: "2003-05-17",
+          },
           {
             "@type": "EducationalOccupationalCredential",
             name: "Meta Front-End Developer Specialization",

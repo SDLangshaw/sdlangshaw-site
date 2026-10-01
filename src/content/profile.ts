@@ -208,12 +208,22 @@ export const practice = [
 ] as const;
 
 export const record = {
-  lead: "The formal credentials run from January through July 2024: front end, generative AI, AWS, then enterprise architecture. The developer on this page was built by shipping the companies above, on top of a Navy career that was already about high-stakes procedure.",
+  lead: "Formal credentials started in the Navy and extended from 2001 to 2003 with a Master of Arts in Computer Resources and Information Management from Webster University. They continued through personal projects and a company project in 2006–2008, adopted in 2012. Updated formal credentials run from January through July 2024: front end, generative AI, AWS, then enterprise architecture. The developer on this page was built by shipping the companies above, on top of a Navy career that was already about high-stakes procedure.",
   chapters: [
     {
       when: "United States Navy",
       title: "Air traffic controller",
       body: "Former Navy AC. The work was real-time judgment, a shared picture, and a record that other people act on. That habit is still the engineering standard: say what is live, say what is waiting, and do not invent a fill.",
+    },
+    {
+      when: "2001–2003",
+      title: "Master of Arts",
+      body: "Webster University, School of Business and Technology, Saint Louis. Master of Arts in Computer Resources and Information Management, conferred 17 May 2003.",
+    },
+    {
+      when: "2006–2008",
+      title: "Adopted in 2012",
+      body: "Personal projects and a company project, built from 2006 to 2008 and adopted in 2012.",
     },
     {
       when: "January–February 2024",
